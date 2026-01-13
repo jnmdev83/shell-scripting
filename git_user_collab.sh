@@ -12,7 +12,7 @@ function fetch_collaborators(){
     -H "Authorization: Bearer $token" \
     -H "X-GitHub-Api-Version: 2022-11-28" \
     "$local_url"
-}git 
+}
 
 read_users=$(fetch_collaborators)
 
