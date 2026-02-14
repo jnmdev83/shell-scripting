@@ -1,0 +1,11 @@
+- name: Loops tutorial
+  hosts: localhost
+  become: true
+  tasks:
+     - name: Install using Loops
+       apt:
+        name: "{{ item }}"
+        state: present
+       loop:
+        - wget
+        - nginx

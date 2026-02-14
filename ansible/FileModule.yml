@@ -1,0 +1,28 @@
+- name: Creating a file
+  hosts: localhost
+  connection: local
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Creating a custom file
+      file:
+        path: /mnt/c/Users/Divyansh Gahlot/Desktop/shells/ansible/file.txt
+        state: touch
+        mode: '0644'
+        owner: root
+        group: root
+      notify: create new file
+
+  handlers:
+    - name: create new file 
+      file:
+        path: /mnt/c/Users/Divyansh Gahlot/Desktop/shells/ansible/newFile.txt
+        state: touch
+        mode: '0644'
+        owner: root
+        group: root
+
+
+
+
+   

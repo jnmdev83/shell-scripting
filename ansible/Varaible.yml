@@ -1,0 +1,15 @@
+- name: varables and Loops
+  hosts: localhost
+  become: true
+
+  vars:
+    packages:
+      - wget
+      - nginx
+  
+  tasks:
+    - name: works with varible
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ packages }}"
