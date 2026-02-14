@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 if command -v $1; then
     echo "$1 is already installed."

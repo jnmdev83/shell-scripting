@@ -1,0 +1,8 @@
+ansible-playbook-examples/
+aws/
+linux/
+shell notes/
+shell projects/
+networking/
+.vscode/
+.venv/
