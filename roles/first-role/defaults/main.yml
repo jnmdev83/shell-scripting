@@ -1,0 +1,8 @@
+---
+# defaults file for first-role
+default_packages:
+  - vim
+  - curl
+  - wget
+
+remove_default_packages: []

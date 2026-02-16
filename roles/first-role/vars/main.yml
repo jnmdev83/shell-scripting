@@ -1,0 +1,13 @@
+---
+# vars file for first-role
+
+user_defaults_group:
+  name: divyanshhh
+  gid: 100000
+
+default_user:
+  name: divyanshhh
+  uid: 100000
+  group: divyanshhh
+
+

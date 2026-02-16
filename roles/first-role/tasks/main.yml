@@ -1,0 +1,26 @@
+---
+# tasks file for first-role
+
+- name: Create user group
+  group:
+    name: "{{ user_defaults_group.name }}"
+    gid: "{{ user_defaults_group.gid }}"
+    state: present
+
+- name: Create default user
+  user:
+    name: "{{ default_user.name }}"
+    uid: "{{ default_user.uid }}"
+    group: "{{ default_user.group }}"
+    state: present
+
+- name: Install the default default_packages
+  package:
+    name: "{{ default_packages }}"
+    state: present
+
+# - name: Remove the default default_packages
+#   package:
+#     name: "{{ remove_default_packages }}"
+#     state: absent
+

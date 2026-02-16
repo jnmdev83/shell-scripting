@@ -1,0 +1,12 @@
+- name: Test my role
+  hosts: localhost
+  connection: local
+  become: true
+
+  roles:
+    - first-role
+
+  vars:
+    remove_default_packages:
+      - wget
+      - curl
