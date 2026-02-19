@@ -18,9 +18,5 @@
       when: ping_result.rc == 0
 
 
-
-# Adding first feature
-# adding second feature 
-
-# adding in main
+# add yak-1
 
