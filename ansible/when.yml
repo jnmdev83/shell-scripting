@@ -18,6 +18,7 @@
       when: ping_result.rc == 0
 
 
+
 # Adding first feature
 # adding second feature 
 
