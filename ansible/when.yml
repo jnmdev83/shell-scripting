@@ -16,12 +16,3 @@
       debug:
         msg: "Ping successful! Proceeding with further tasks."
       when: ping_result.rc == 0
-
-
-
-# add yak-1
-
-# add yak-2
-
-# adding in master
-
