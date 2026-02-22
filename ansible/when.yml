@@ -18,3 +18,5 @@
       when: ping_result.rc == 0
 
       # adding feature 1 in master
+# adding feature in dev 1
+
