@@ -16,6 +16,5 @@
       debug:
         msg: "Ping successful! Proceeding with further tasks."
       when: ping_result.rc == 0
-# 111111111
 
-# 2222222
+      # adding feature 1 in master
